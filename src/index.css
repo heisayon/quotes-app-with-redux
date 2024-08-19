@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @layer base{
-    .custom-shadow{
+    .custom-shadow-light{
         filter: drop-shadow(8px 5px 0px black);
+    }
+    .custom-shadow-dark{
+        filter: drop-shadow(8px 5px 0px white);
     }
 }
