@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .custom-shadow{
+        filter: drop-shadow(8px 5px 0px black);
+    }
+}
