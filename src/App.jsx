@@ -12,10 +12,10 @@ function App() {
 
   if (error) {
     return (
-      <>
+      <div className="dark:bg-black">
         <NavBar />
         <Error />
-      </>
+      </div>
     );
   }
 
