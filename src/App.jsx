@@ -2,11 +2,8 @@ import { useGetRandomQuoteQuery } from "./redux/randomQuote";
 import Loader from "./components/Loader";
 import Quote from "./pages/Quote";
 import NavBar from "./components/NavBar";
-import { useContext } from "react";
-import { ThemeProvider } from "./context/ThemeContext";
 import Error from "./pages/Error";
 function App() {
-  const { light } = useContext(ThemeProvider);
   const { isLoading, error } = useGetRandomQuoteQuery();
 
   if (isLoading) {
@@ -14,11 +11,16 @@ function App() {
   }
 
   if (error) {
-    return <Error />;
+    return (
+      <>
+        <NavBar />
+        <Error />
+      </>
+    );
   }
 
   return (
-    <div className={` mode-transition ${light ? "bg-white" : "bg-black"}`}>
+    <div className="mode-transition bg-white dark:bg-black">
       <NavBar />
       <Quote />;
     </div>

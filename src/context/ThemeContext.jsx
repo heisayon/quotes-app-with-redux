@@ -1,13 +1,13 @@
 import { createContext } from "react";
-import { useState } from "react";
+import useTheme from "../hooks/useTheme";
 
 const ThemeProvider = createContext();
 
 // eslint-disable-next-line react/prop-types
 function ThemeContext({ children }) {
-  const [light, setLight] = useState(true);
+  const { toggleMode, darkMode } = useTheme();
   return (
-    <ThemeProvider.Provider value={{ light, setLight }}>
+    <ThemeProvider.Provider value={{ toggleMode, darkMode }}>
       {children}
     </ThemeProvider.Provider>
   );

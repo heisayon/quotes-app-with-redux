@@ -1,6 +1,6 @@
 function Loader() {
   return (
-    <div role="status" className="flex justify-center items-center h-[100vh]">
+    <div role="status" className="flex justify-center items-center h-[100vh] dark:bg-black">
       <svg
         aria-hidden="true"
         className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
