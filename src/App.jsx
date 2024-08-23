@@ -12,7 +12,7 @@ function App() {
 
   if (error) {
     return (
-      <div className="dark:bg-black">
+      <div className="dark:bg-black mode-transition">
         <NavBar />
         <Error />
       </div>
