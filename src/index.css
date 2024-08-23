@@ -12,7 +12,7 @@
     }
 
     .mode-transition {
-        transition: all 1s ease;
+        transition: all .6s ease;
     }
 
 }
