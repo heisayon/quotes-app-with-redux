@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    .custom-shadow-light{
+@layer base {
+    .custom-shadow-light {
         filter: drop-shadow(8px 5px 0px black);
     }
-    .custom-shadow-dark{
+
+    .custom-shadow-dark {
         filter: drop-shadow(8px 5px 0px white);
     }
+
+    .mode-transition {
+        transition: all 1s ease;
+    }
+
 }

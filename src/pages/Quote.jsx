@@ -1,7 +1,7 @@
-import { useGetRandomQuoteQuery } from "./redux/randomQuote";
-import Loader from "./components/Loader";
+import { useGetRandomQuoteQuery } from "../redux/randomQuote";
+import Loader from "../components/Loader";
 import { useContext } from "react";
-import { ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider } from "../context/ThemeContext";
 
 function Quote() {
   const { light } = useContext(ThemeProvider);
