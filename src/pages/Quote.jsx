@@ -21,7 +21,7 @@ function Quote() {
           })}
           <button
             onClick={() => refetch()}
-            className="px-5 py-2 bg-blue-500 border-black  border mt-5 active:scale-90 transition-all rounded-sm custom-shadow-light dark:custom-shadow-dark"
+            className="px-5 py-2 bg-blue-500 border-black text-white  border mt-5 active:scale-90 transition-all rounded-sm custom-shadow-light dark:custom-shadow-dark"
           >
             Generate New
           </button>

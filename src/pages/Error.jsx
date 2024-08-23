@@ -2,9 +2,9 @@ import { useGetRandomQuoteQuery } from "../redux/randomQuote";
 function Error() {
   const { refetch } = useGetRandomQuoteQuery();
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center items-center h-[100vh] dark:bg-black">
       <div className="text-center">
-        <h1 className=" text-3xl font-sans font-bold">
+        <h1 className=" text-3xl font-sans font-bold dark:text-white">
           Oops, Something went wrong.👀
         </h1>
         <button
